@@ -2,7 +2,7 @@
     <div *ngFor="let section of config.sections" class="tots-section-board">
       <tots-board-header-component [config]="config" [section]="section"></tots-board-header-component>
   
-      <div cdkDropList [cdkDropListData]="section.children" class="tots-list-board" (cdkDropListDropped)="drop($event)">
+      <div cdkDropList [cdkDropListData]="section.children" class="tots-list-board" (cdkDropListDropped)="drop($event, section)">
         <div class="tots-item-card-board" *ngFor="let item of section.children" cdkDrag>
             <tots-board-card-component [config]="config" [item]="item"></tots-board-card-component>
         </div>

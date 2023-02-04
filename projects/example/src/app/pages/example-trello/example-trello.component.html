@@ -1,1 +1,1 @@
-<tots-board-card *ngIf="config" [config]="config"></tots-board-card>
+<tots-board-card *ngIf="config" [config]="config" (moveItem)="moveItem($event)" (changeSection)="changeSection($event)"></tots-board-card>
