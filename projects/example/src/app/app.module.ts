@@ -5,14 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { TotsBoardCardModule } from 'projects/tots/board-card/src/public-api';
+import { ExampleTrelloComponent } from './pages/example-trello/example-trello.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ExampleTrelloComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    TotsBoardCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
