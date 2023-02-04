@@ -1,0 +1,12 @@
+.tots-board {
+    display: flex;
+    justify-content: left;
+}
+
+.tots-section-board {
+    margin-left: 10px;
+}
+
+.tots-section-board:first-child {
+    margin-left: 0px;
+}

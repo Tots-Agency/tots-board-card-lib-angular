@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag-drop';
+import { TotsBoardCardConfig } from '../../entities/tots-board-card-config';
 
 @Component({
   selector: 'tots-board-card',
@@ -7,6 +8,14 @@ import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag
   styleUrls: ['./tots-board-card.component.scss']
 })
 export class TotsBoardCardComponent {
+
+  @Input() config!: TotsBoardCardConfig;
+
+
+
+
+
+
   todo = ['Get to work', 'Pick up groceries', 'Go home', 'Fall asleep'];
 
   done = ['Get up', 'Brush teeth', 'Take a shower', 'Check e-mail', 'Walk dog'];
