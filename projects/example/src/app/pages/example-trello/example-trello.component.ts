@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TotsBoardCardConfig } from 'projects/tots/board-card/src/public-api';
+import { CardItemComponent } from '../../components/card-item/card-item.component';
 import { HeaderSectionComponent } from '../../components/header-section/header-section.component';
 
 @Component({
@@ -18,19 +19,104 @@ export class ExampleTrelloComponent implements OnInit {
   loadConfig() {
     this.config = new TotsBoardCardConfig();
     this.config.componentHeader = HeaderSectionComponent;
+    this.config.componentItem = CardItemComponent;
     this.config.sections = [
       { item: { title: 'Section One' }, children: [
-        { item: { title: 'Item One' } },
-        { item: { title: 'Item Two' } },
-        { item: { title: 'Item Three' } },
-        { item: { title: 'Item Four' } },
+        { title: 'Item one' },
+        { title: 'Item Two' },
+        { title: 'Item Three' },
+        { title: 'Item Four' },
       ] },
 
       { item: { title: 'Section Two' }, children: [
-        { item: { title: 'Item Five' } },
-        { item: { title: 'Item Six' } },
-        { item: { title: 'Item Seven' } },
-        { item: { title: 'Item Eight' } },
+        { title: 'Item Five' },
+        { title: 'Item Six' },
+        { title: 'Item Seven' },
+        { title: 'Item Eight' },
+      ] },
+
+
+      { item: { title: 'Section Two' }, children: [
+        { title: 'Item Five' },
+        { title: 'Item Six' },
+        { title: 'Item Seven' },
+        { title: 'Item Eight' },
+      ] },
+
+
+      { item: { title: 'Section Two' }, children: [
+        { title: 'Item Five' },
+        { title: 'Item Six' },
+        { title: 'Item Seven' },
+        { title: 'Item Eight' },
+      ] },
+
+
+      { item: { title: 'Section Two' }, children: [
+        { title: 'Item Five' },
+        { title: 'Item Six' },
+        { title: 'Item Seven' },
+        { title: 'Item Eight' },
+      ] },
+
+
+      { item: { title: 'Section Two' }, children: [
+        { title: 'Item Five' },
+        { title: 'Item Six' },
+        { title: 'Item Seven' },
+        { title: 'Item Eight' },
+      ] },
+
+
+      { item: { title: 'Section Two' }, children: [
+        { title: 'Item Five' },
+        { title: 'Item Six' },
+        { title: 'Item Seven' },
+        { title: 'Item Eight' },
+      ] },
+
+
+      { item: { title: 'Section Two' }, children: [
+        { title: 'Item Five' },
+        { title: 'Item Six' },
+        { title: 'Item Seven' },
+        { title: 'Item Eight' },
+      ] },
+
+
+      { item: { title: 'Section Two' }, children: [
+        { title: 'Item Five' },
+        { title: 'Item Six' },
+        { title: 'Item Seven' },
+        { title: 'Item Eight' },
+      ] },
+
+      { item: { title: 'Section Two' }, children: [
+        { title: 'Item Five' },
+        { title: 'Item Six' },
+        { title: 'Item Seven' },
+        { title: 'Item Eight' },
+      ] },
+
+      { item: { title: 'Section Two' }, children: [
+        { title: 'Item Five' },
+        { title: 'Item Six' },
+        { title: 'Item Seven' },
+        { title: 'Item Eight' },
+      ] },
+
+      { item: { title: 'Section Two' }, children: [
+        { title: 'Item Five' },
+        { title: 'Item Six' },
+        { title: 'Item Seven' },
+        { title: 'Item Eight' },
+      ] },
+
+      { item: { title: 'Section Two' }, children: [
+        { title: 'Item Five' },
+        { title: 'Item Six' },
+        { title: 'Item Seven' },
+        { title: 'Item Eight' },
       ] },
     ];
   }

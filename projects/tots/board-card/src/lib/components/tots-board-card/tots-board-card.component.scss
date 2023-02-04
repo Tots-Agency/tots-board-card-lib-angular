@@ -1,12 +1,28 @@
 .tots-board {
     display: flex;
     justify-content: left;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+    height: 100%;
+    width: max-content;
 }
 
 .tots-section-board {
     margin-left: 10px;
 }
 
+.tots-list-board{
+    height: 100%;
+}
+
 .tots-section-board:first-child {
     margin-left: 0px;
+}
+
+.tots-item-card-board {
+    margin-top: 10px;
+}
+
+.tots-item-card-board:first-child {
+    margin-top: 0px;
 }

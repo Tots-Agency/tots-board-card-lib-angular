@@ -8,6 +8,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 /** Components */
 import { TotsBoardCardComponent } from './components/tots-board-card/tots-board-card.component';
 import { HeaderComponentComponent } from './components/header-component/header-component.component';
+import { CardComponentComponent } from './components/card-component/card-component.component';
 
 
 
@@ -16,7 +17,8 @@ import { HeaderComponentComponent } from './components/header-component/header-c
     
     /** Components */
     TotsBoardCardComponent,
-         HeaderComponentComponent
+         HeaderComponentComponent,
+         CardComponentComponent
   ],
   imports: [
     CommonModule,
