@@ -5,7 +5,7 @@ import { TotsSectionBoard } from '../../entities/tots-section-board';
 @Component({
   selector: 'tots-board-header-component',
   templateUrl: './header-component.component.html',
-  styleUrls: ['./header-component.component.css']
+  styleUrls: ['./header-component.component.scss']
 })
 export class HeaderComponentComponent {
 
