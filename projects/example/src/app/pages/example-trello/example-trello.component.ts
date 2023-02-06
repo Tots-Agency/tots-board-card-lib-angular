@@ -28,6 +28,7 @@ export class ExampleTrelloComponent implements OnInit {
     this.config = new TotsBoardCardConfig();
     this.config.componentHeader = HeaderSectionComponent;
     this.config.componentItem = CardItemComponent;
+    //this.config.disabled = true;
     this.config.sections = [
       { item: { title: 'Section One' }, children: [
         { title: 'Item one' },

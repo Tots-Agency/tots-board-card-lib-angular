@@ -4,4 +4,5 @@ export class TotsBoardCardConfig {
     componentHeader: any;
     componentItem: any;
     sections: Array<TotsSectionBoard> = [];
+    disabled: boolean = false;
 }
